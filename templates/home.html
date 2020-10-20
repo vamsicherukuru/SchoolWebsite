@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+<style>
+  body{
+    background-position: center bottom;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    animation-name: back;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes back {
+
+
+  0%{
+      background-image: url("{% static 'images/school_01.jpg' %}");
+
+  }
+  25%{
+
+      background-image: url("{% static 'images/school_02.jpg' %}");
+
+  }
+  50%{
+
+      background-image: url("{% static 'images/school_03.jpg' %}");
+
+  }
+  75%{
+
+      background-image: url("{% static 'images/school_04.jpg' %}");
+
+  }
+  100%{
+
+      background-image: url("{% static 'images/school_05.jpg' %}");
+
+  }
+
+  }
+
+</style>
+
+<div id='slides'>
+
+</div>
+
+<div class="container" style="margin-top:50px;">
+  <a href="{% url 'rrps_web:announcements' %}" type="button" class="btn btn-outline-danger">Announcements</a>
+</div>
+
+<div  style="margin-top:100px;margin-left:20px;margin-right:20px;background:rgba(0,0,0,0.3);">
+
+  <div id="slides" >
+
+
+    <h2 style="color:white;font-family:arial;padding:50px;">
+<img src="{% static 'images/tompic.png' %}" alt="" width="300px;">
+      Let's Learn Together</h2>
+    <h2 style="color:black;text-shadow:2px 3px 5px white;font-family:arial;padding:50px;font-size:3em;font-weight:bold;">కలిసి నేర్చుకుందాం..!</h2>
+
+    <h5 style="color:white;font-family:arial;padding:50px;">"Some of the brightest minds in the country can be found on last benches of the class room." - A P J Abdul Kalam</h5>
+  </div>
+
+</div>
+<br><br>
+
+<div class="" style="background:white;">
+  <center><h1>LATEST NEWS</h1></center>
+
+
+
+
+
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"> School Details</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+</div>
+{% endblock %}

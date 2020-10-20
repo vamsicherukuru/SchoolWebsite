@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+
+<style>
+
+  input{
+    padding:10px;
+    width:500px;
+    border-radius:10px;
+    font-family:verdana;
+    background:rgba(0,0,0,0.1);
+    border:1px solid black;
+
+    color:;
+  }
+  input[name=Student_Name]{
+
+  }
+body{
+  background:white;
+}
+
+</style>
+
+<center>
+
+
+  <div class="add_form" style=" background:rgba(250,250,250,0.8);width:800px;margin-top:50px;">
+
+  <center>
+    <form method="post">
+<div class="" style="border:2px solid black;padding:20px;">
+
+<h5>M P U P School, Ramarajupalle, Kadapa mandal, YSR District,AP.</h5>
+<hr>
+<h6>(English Medium)</h6>
+<hr>
+<h5>School U-DISE Code : 28203191445</h5>
+<hr>
+
+  <h1>
+  <img src="{% static 'images/child.png' %}" width="80px;" alt="">
+    9th class Admission Form</h1>
+</div>
+
+      {% csrf_token %}
+      <div class="" style="border:2px solid black;padding:20px;">
+
+        {{form.as_p}}
+
+        <input type="submit" name="" value="Submit " class="btn btn-success">
+      </div>
+    </form>
+  </center>
+
+  </div>
+
+
+</center>
+
+
+
+{% endblock %}

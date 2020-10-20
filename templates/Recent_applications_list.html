@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block body_block %}
+
+<div class="container">
+  <h1>Class wise Applications List</h1>
+
+
+
+
+
+
+    <table class="table" style="border:1px solid black;background:white;">
+      <thead class="thead-dark">
+        <th>S.no</th>
+        <th>Class</th>
+
+        <th>Applications</th>
+
+      </thead>
+
+      <tr>
+        <td>1</td>
+        <td>6th Class</td>
+        <td>
+            <a href="{% url 'rrps_web:six_adds_list' %}" class="btn btn-danger">Open List</a>
+        </td>
+
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>7th Class</td>
+        <td>
+            <a href="{% url 'rrps_web:seven_adds_list' %}" class="btn btn-danger">Open List</a>
+        </td>
+
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>8th Class</td>
+        <td>
+            <a href="{% url 'rrps_web:eight_adds_list' %}" class="btn btn-danger">Open List</a>
+        </td>
+
+      </tr>
+
+    </table>
+
+
+</div>
+
+
+
+{% endblock %}

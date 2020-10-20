@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+
+<style >
+  body{
+    background:white;
+  }
+
+</style>
+
+
+<br>
+<br>
+
+
+
+<div class="container">
+  <h4>Class Level Intakes (Academic Year 2020-2021)</h4>
+  <table class="table" style="border:1px solid black">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">S.NO</th>
+        <th scope="col">Class Level</th>
+        <th scope="col">Important Dates</th>
+        <th scope="col">Application</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>6th class</td>
+        <td>N/A</td>
+        <td><a class="btn btn-success" href="{% url 'rrps_web:sixthAdd' %}">Click here</a></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>7th class</td>
+        <td>N/A</td>
+        <td><a class="btn btn-success" href="{% url 'rrps_web:sevenAdd' %}">Click here</a></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>8th class</td>
+        <td>N/A</td>
+        <td><a class="btn btn-success" href="{% url 'rrps_web:eightAdd' %}">Click here</a></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>9th class</td>
+        <td>N/A</td>
+        <td><a class="btn btn-success" href="{% url 'rrps_web:nineAdd' %}">Click here</a></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>10th class</td>
+        <td>N/A</td>
+        <td>
+
+          <a class="btn btn-success" href="{% url 'rrps_web:tenthAdd' %}">Click here</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+{% endblock %}

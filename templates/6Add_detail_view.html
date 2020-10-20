@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
+
+
+
+
+
+
+<div class="container">
+  <center>
+
+
+
+  <div class="container">
+
+    <table class="table">
+      <thead class="thead-dark">
+        <th>S.No</th>
+        <th>Name</th>
+        <th>Value</th>
+      </thead>
+      <tr>
+        <td><img src="{{six_add_detail.Student_Photo}}" alt=""></td>
+        <td><h3>{{six_add_detail.Student_Name}}</h3></td>
+        <td><h5>{{six_add_detail.email_Id}}</h5></td>
+      </tr>
+    </table>
+
+  </div>
+  </center>
+
+
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block body_block %}
+<style >
+  body{
+    background:white;
+  }
+
+</style>
+<body >
+
+  <div class="container">
+    <h1>Announcements</h1>
+    <center>
+
+        <table class="table" style="border:1px solid black;background:white;">
+          <thead class="thead-dark">
+            <th>S.no</th>
+            <th>Announcement Date</th>
+            <<th>Description</th>
+          </thead>
+          {% for anns in announcements %}
+            <tr>
+              <td>{{anns.id}}</td>
+                <td>{{anns.dateofan}}</td>
+                  <td>{{anns.Description}}</td>
+            </tr>
+          {% endfor %}
+
+        </table>
+
+
+      <center>
+  </div>
+
+</body>
+
+
+
+{% endblock %}

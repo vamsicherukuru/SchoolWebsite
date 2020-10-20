@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+
+{% block body_block %}
+<body style="background:white;">
+
+
+<br>
+
+<div class="container" style="border:2px dashed black;">
+  <br><br>
+  <h1>There are two modes from which you can apply for the admission.
+  <h2>
+  <ul>
+    <li>Online Mode : you can apply online based admission by providing you Email Id and respective details. Admission confirmation mail will be sent in a few days.
+
+      <center>
+            <a type="button" class="btn btn-dark" href="{% url 'rrps_web:classes_list' %}">Apply Online</a>
+      </center>
+
+
+      </li>
+      <li>Offline Mode : Alternate option is to download the application form and reach our address to submit it and confirm the admission on spot.
+        <br> You can download the admission form from the link given below.
+
+        <center>
+              <button type="button" class="btn btn-dark">Apply offline</button>
+        </center>
+
+
+        </li>
+
+
+  </ul>
+
+  </h2>
+  </h1>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+{% endblock %}
